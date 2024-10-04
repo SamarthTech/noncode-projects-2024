@@ -43,6 +43,7 @@ For the official React  documentation, please refer to the [React documentation 
     - [useActionState](#1416-useactionstate)  
 15. [Routing](#15-routing)
 16. [React Redux](#16-react-redux)
+17. [Redux Toolkit](#17-redux-toolkit)
 
 ---
 
@@ -834,3 +835,122 @@ npm install redux react-redux
 - **useDispatch**: Dispatches actions to the store.
 
 For more details, refer to the [here](https://react-redux.js.org/).
+
+
+## 17. Redux Toolkit
+
+Redux Toolkit is the official, recommended way to write Redux logic. It provides a set of tools to simplify common Redux tasks like store setup, creating reducers, and handling immutable updates. Redux Toolkit helps improve developer experience by removing boilerplate and enabling better patterns for writing Redux logic.
+
+### Concept of Slice in redux toolkit:
+
+**1. Combining Reducers and Actions in One Place:** The createSlice function simplifies Redux by automatically generating both the action creators and reducers. This reduces the boilerplate typically involved in manually writing action types, action creators, and reducers separately.
+
+**2. Handling Immutable State Updates with Immer:** Redux Toolkit uses Immer under the hood, which allows you to write "mutative" code in reducers, but behind the scenes, Immer ensures the state is updated immutably. This means you can directly update state properties without worrying about immutability rules.
+
+**3. Supports Initial State:** createSlice takes an initialState argument, which defines the starting point for the slice's state. This helps keep the state structure consistent and easy to follow.
+
+### Key Features of Redux Toolkit:
+
+- Simpler store setup with `configureStore`
+- slice reducers created with `createSlice`
+- Built-in **Redux DevTools** integration
+- Thunks for handling asynchronous logic with `createAsyncThunk`
+- Immutability is ensured using **Immer** under the hood
+
+### Installation
+
+Install Redux Toolkit and React-Redux:
+
+```bash
+npm install @reduxjs/toolkit react-redux
+```
+
+### Setup
+
+1. **Create a Redux slice:** Redux Toolkit uses createSlice to combine action creators and reducers.
+   ```javascript
+   // counterSlice.js
+   import { createSlice } from '@reduxjs/toolkit';
+
+   const counterSlice = createSlice({
+     name: 'counter',
+     initialState: {
+       value: 0,
+     },
+     reducers: {
+       increment: (state) => {
+         state.value += 1;
+       },
+       decrement: (state) => {
+         state.value -= 1;
+       },
+       reset: (state) => {
+         state.value = 0;
+       },
+     },
+   });
+   
+   export const { increment, decrement, reset } = counterSlice.actions;
+   export default counterSlice.reducer;
+   ```
+   
+2. **Create Redux Store**: Define a reducer and create a store to hold the global state.
+   ```javascript
+   // store.js
+   import { configureStore } from '@reduxjs/toolkit';
+   import counterReducer from './counterSlice';
+   
+   export const store = configureStore({
+     reducer: {
+       counter: counterReducer,
+     },
+   });
+   ```
+
+3. **Provide the Store to React**: Wrap your root component with the `Provider` component to make the Redux store available throughout your app.
+   
+   ```javascript
+   // index.js
+   import React from 'react';
+   import ReactDOM from 'react-dom';
+   import { Provider } from 'react-redux';
+   import App from './App';
+   import store from './store';
+
+   ReactDOM.render(
+     <Provider store={store}>
+       <App />
+     </Provider>,
+     document.getElementById('root')
+   );
+   ```
+
+3. **Access Redux State and Dispatch Actions**:
+   - Use `useSelector` to read from the state.
+   - Use `useDispatch` to dispatch actions.
+
+
+   ```javascript
+   // CounterComponent.js
+   import React from 'react';
+   import { useSelector, useDispatch } from 'react-redux';
+   import { increment, decrement, reset } from './counterSlice';
+
+   function CounterComponent() {
+     const count = useSelector((state) => state.counter.value);
+     const dispatch = useDispatch();
+   
+     return (
+       <div>
+         <h1>{count}</h1>
+         <button onClick={() => dispatch(increment())}>Increment</button>
+         <button onClick={() => dispatch(decrement())}>Decrement</button>
+         <button onClick={() => dispatch(reset())}>Reset</button>
+       </div>
+     );
+   }
+
+   export default CounterComponent;
+   ```
+
+   For more details, refer to the [here](https://redux-toolkit.js.org/).
