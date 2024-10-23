@@ -83,12 +83,6 @@ jobs:
               REASONS+="- Files are not within a single directory in the root.\n"
             fi
 
-            # Check if the directory name is valid (alphanumeric, hyphens, and underscores only)
-            if ! [[ $ROOT_DIR =~ ^[a-zA-Z0-9_-]+$ ]]; then
-              VALID=false
-              REASONS+="- Invalid directory name or folder structure.\n"
-            fi
-
             # Check for changes to .github folder
             if echo "$PR_FILES" | grep -q "^\.github/"; then
               VALID=false
@@ -105,12 +99,6 @@ jobs:
             if gh pr view ${{ github.event.pull_request.number }} --json mergeable --jq '.mergeable' | grep -q false; then
               VALID=false
               REASONS+="- PR has merge conflicts.\n"
-            fi
-
-            # Check for spaces at the beginning or end of folder names
-            if echo "$PR_FILES" | grep -qE '(^| )/| /|/ |/$'; then
-              VALID=false
-              REASONS+="- Spaces found at the beginning or end of folder names in file paths.\n"
             fi
 
             # Check for absence of web-related and Python files
