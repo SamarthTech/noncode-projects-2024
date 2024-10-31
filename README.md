@@ -2,7 +2,7 @@
 
 # 🎉 Welcome to `OPEN ODYSSEY 1.0` 🎉
 
-# Low Code or Non Code Projects
+# 🚀 Low Code or No Code Projects 🚀
 
 <a href="https://bit.ly/open-odyssey-1"><img src="https://img.shields.io/badge/Major%20League%20Hacking%20USA-MLH-white?style=for-the-badge&logo=majorleaguehacking&color=red" alt="MLH Badge"/></a>
 
@@ -14,46 +14,49 @@
 </div>
 
 ![Open odyssey 1.0](https://events.mlh.io/rails/active_storage/representations/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBbmNyIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--91b1f7a1789ef6d613dbe59293325fa1271ec711/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2QzNKbGMybDZaVWtpRGpFeU1EQjROakF3SVFZN0JsUT0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--bb74e2531ca3e0ee463ad8c55d04110fcf863b74/DEVX%20Hacks%20(1200%20x%20600%20px)%20(1).png)
-
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 ## The Open Source Adventure Awaits! 🗺️
 
 🚀 Samarth presents to you `Open Odyssey 1.0` - an Open-source extravaganza. On our inaugural season, we bring to you a special Hacktoberfest edition, collaborating with MLH (Major League Hacking) 🥳 
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+
+# Ready to Begin? Here’s How!
 
 
-# INSTRUCTIONS - Get Ready for the Adventure 🧭
 
 Welcome! We're excited to have you on board. Follow the steps below to contribute and add yourself to our contributors' list.
-
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 ## Prerequisites
-Before you begin, ensure you have the following installed:
+Before you begin, make sure you have:
 - [Git](https://git-scm.com/) along with a GitHub account created
 - Any Code Editor, RECOMMENDED: [Visual Studio Code](https://code.visualstudio.com/download)
 - [Node.js and npm](https://nodejs.org/) (if applicable)
 - Any specific tools/libraries your project relies on.
-
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 ## The Right Contribution
 
 This repository is specifically marked for Low Code or Non Code Projects. Please stick to the project type to make organizing things easier. If you wish to contribute elsewise, please find appropriate `hacktoberfest 2024` marked repositories or pinned repositories on [SamarthTech](https://github.com/SamarthTech) . 
 <br/> There are several ways you can contribute here:
-- Technical documentation
-- User experience testing
-- Graphic or UI/UX Design
-- Content Writing
-- Be Creative !
+- Technical Documentation 📑
+- User Experience Testing 👤
+- Graphic or UI/UX Design 🎨
+- Content Writing ✍️
+- Creativity is always welcome! 
+
 - Check out [CONTRIBUTING.md](https://github.com/SamarthTech/noncode-projects-2024/blob/main/CONTRIBUTING.md) for more information on Contribution
 
 
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+##🚀 GitHub CLI Guide
 
-## GitHub CLI Guide
-
-1. Fork this Repository using the button at the top on right corner.
+1. Fork this repository.
 
 2. Clone your forked repository to your PC by first clicking on 'Code' on your Forked Repo, then copy the URL shown there. The URL should look like the following with your GitHub username in place of `<your-username>` :
     ```bash
     git clone https://github.com/<your-username>/SamarthTech/noncode-projects-2024.git
     ```
   
-3. Create a new folder and upload your mini project/source code there.
+3.Create a new folder and upload your project.
 
 4. [OPTIONAL] Carve your own path with a new branch for your modifications (ie. `git branch new-user` and check it out `git checkout new-user` or simply do `git checkout -b new-user`) 
 
@@ -88,18 +91,17 @@ This repository is specifically marked for Low Code or Non Code Projects. Please
 ### Wait for Pull Request to merge
 
 ### Celebrate - you've done your first pull request!!
-
-# REWARDS 🏆
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
+# 🎉 Rewards and Recognition
 - ## Leaderboard 🔝
     This season, we have integrated a special Leaderboard featuring our Top 5 contributors that will be updated regularly. Each contribution matters!!!
 
     Whats in for the Leaders of the Leaderboard ???
     ### Social Shoutout & Certificate to Top 5 Project Contributors
 
-- ## Certificates for all Participants
-
+- ## Certificates for All Participants 🎖️
 - ## Special Shoutout to Mentors
-
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900">
 # + Follow US on our Socials: Swift Approval of Your Quest 🚀
 - ## Instagram : [@samarth_tmsl_official](https://www.instagram.com/samarth_tmsl_official/)
 - ## Facebook : [Samarth TMSL](https://www.facebook.com/SamarthTMSL?mibextid=ZbWKwL)
